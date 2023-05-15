@@ -6,13 +6,10 @@
 // 10, "blue", "red"  -->  ["blue", "red", "blue", "red", "blue", "red", "blue", "red", "blue", "red"]
 // 0, "one", "two"    -->  []
 
-function alternate(n, firstValue, secondValue)
-let arr = []
-for(let i = 0; i < n; i++){
-    if(i % 2 === 0){
-        arr.push(firstValue)
-    }else{
-        arr.push(secondValue)
+function alternate(n, firstValue, secondValue){
+    const array = [];
+    for (let i = 0; i < n; i++){
+        array.push(i % 2 === 0 ? firstValue : secondValue)
     }
-    return arr
+    return array;
 }
