@@ -18,25 +18,32 @@
 
 // MY SOLUTION
 
-function removeSmallest(numbers) {
-    //P: find smallest array, at first index of it, remove it
-    // if empty then return empty
-    // return original array
-    // let minNum = Math.min(numbers);
-    // numbers.forEach((num)=> {
-    //     if (num === minNum){
-    //         numbers.shift();
-    //     }
-    // })
+// function removeSmallest(numbers) {
+//     //P: find smallest array, at first index of it, remove it
+//     // if empty then return empty
+//     // return original array
+//     // let minNum = Math.min(numbers);
+//     // numbers.forEach((num)=> {
+//     //     if (num === minNum){
+//     //         numbers.shift();
+//     //     }
+//     // })
 
-    let minNum = numbers[0];
-    //iterate through and find smallest number
-    for (let i=0; i < numbers.length; i++){
-        if (numbers[i] < minNum){ 
-            minNum = numbers[i]
-        }
-    }
-    return [];
+//     let minNum = numbers[0];
+//     //iterate through and find smallest number
+//     for (let i=0; i < numbers.length; i++){
+//         if (numbers[i] < minNum){ 
+//             minNum = numbers[i]
+//         }
+//     }
+//     return [];
+//   }
+
+  // SOLUTION
+   
+  function removeSmallest(numbers) {
+    let indexOfMin = numbers.indexOf(Math.min(...numbers));
+    return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
   }
 
 
