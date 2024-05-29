@@ -9,7 +9,7 @@
 
 //returns new array
 // 3 => 5.0, 10.0, 15.0 first 3 multiples of 5.0
-// i = 0, i <= m, i++
+// i = 1, i <= m, i++
 // n * n push
 
 
