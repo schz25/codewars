@@ -1,5 +1,5 @@
 # My Daily Codewars
-Everyday is a new day to bring on a codewars kata!
+A kata a day keeps the imposter syndrome away!
 
 
 ![Codewars](https://github.r2v.ch/codewars?user=schz25&stroke=%23BB432C)
